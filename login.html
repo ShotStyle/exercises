@@ -13,6 +13,19 @@
       align-items: center;
       background-color: rgba(0, 255, 255, 0.199);
       background-image: url(mar2.jpg);
+
+      background-repeat: no-repeat;
+      animation: fundoLeve 10s ease-in-out infinite alternate;
+    }
+
+    @keyframes fundoLeve {
+      0% {
+        background-position: center 0px;
+      }
+
+      100% {
+        background-position: center -60px;
+      }
     }
 
     .wrapper {
