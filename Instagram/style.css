@@ -1,0 +1,93 @@
+/*
+Theme Name: Instagram
+Author: Kenzie Academy
+Author URI: kenzie.com.br;
+Version: 1.0
+ 
+--------------------------------------------
+SUGESTÃO DE ESTRUTURAÇÃO BASE 
+--------------------------------------------
+**** DECLARAÇÃO DE VARIÁVEIS
+**** BODY
+**** TOPO
+**** RODAPÉ
+**** PÁGINA INICIAL
+*/
+
+/* VARIÁVEIS */
+:root {}
+
+/*BODY*/
+body {}
+
+.container {
+  width: 935px;
+}
+
+.profile-photo img {
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  margin-right: 0px;
+  border-color: rgba(128, 128, 128, 0.301);
+  border-style: solid;
+}
+
+
+/*TOPO*/
+header img {
+  width: 120px;
+}
+
+/*RODAPÉ*/
+footer {}
+
+/*PÁGINA INICIAL*/
+main {}
+
+main .profile-content {}
+
+.highlighted-stories img {
+  width: 15%;
+  height: 15%;
+}
+
+
+.profile-posts {
+  width: 935px;
+  /* largura padrão do Instagram */
+  margin: 40px auto;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 13px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Cada quadrado (cada foto) */
+.posts li {
+  width: 293px;
+  /* tamanho ideal do IG */
+  height: 293px;
+  overflow: hidden;
+}
+
+/* Remove comportamento maluco do figure */
+.posts li figure {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Ajusta a imagem dentro do quadrado */
+.posts li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* corta e deixa quadrada */
+  display: block;
+}
